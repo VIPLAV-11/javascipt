@@ -11,11 +11,12 @@
             padding: 0;
         }
 
-        body {
+        body {   
             background-color: rgba(220, 61, 61, 0.809);
             margin: 0;
             padding: 45px;
             display: flex;
+            background-image: url("https://wallpapers.com/images/featured/best-ever-desktop-bgt6dccypy1dfk0c.jpg");
         }
 
         .container {
@@ -24,14 +25,32 @@
             padding: 7px;
             border-radius: 15px;
             width: 220px;
+            animation: ViplavKaAnimation 1.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) ;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://images.unsplash.com/photo-1491466424936-e304919aada7?fm=jpg&q=6…xid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVzdCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+            
 
         }
+        @keyframes ViplavKaAnimation {
+            0%{
+                transform: scale(0) rotate(360deg);
+                opacity: 0;
+            }
+            100%{transform: scale(1) rotate(0);
+                opacity: 1;}
+        }
+
 
         .card {
             margin: 3px;
             padding: 6px;
             /* border-radius: 20px; */
             width: 200px;
+            animation: ViplavKaAnimation 1.7s cubic-bezier(0.68, -0.55, 0.27, 1.55) ;
+            justify-content: center;
+            align-items: center;
+            color: white;
         }
 
         .image {
