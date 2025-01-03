@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing</title>
+    <style>
+        .container {
+            background-color: rgb(41, 14, 193);
+            width: 95vw;
+            height: 80vh;
+            position: relative;
+        }
+
+        .box {
+            background-color: rgb(218, 31, 22);
+            width: 121px;
+            height: 121px;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            border-radius: 100%;
+            animation: AnimationX 3s linear infinite 4s , AnimationY 1s ease-out infinite alternate ;
+        }
+
+        @keyframes AnimationX {
+            from {
+                left: 0;
+            }
+               
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes AnimationY {
+            from {
+                bottom: 0;
+            }
+               
+            to {
+                bottom: 100%;
+            }
+        } 
+         
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>
